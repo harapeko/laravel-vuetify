@@ -5,8 +5,12 @@
  */
 
 require('./bootstrap');
-
 window.Vue = require('vue');
+
+// Vueプラグイン登録
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
+Vue.use(Vuetify);
 
 /**
  * The following block of code may be used to automatically register your
@@ -27,6 +31,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app',
-});
+
+new Vue({
+    vuetify: new Vuetify(),
+}).$mount('#app')
