@@ -86337,8 +86337,9 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
  */
 
 new Vue({
+  el: '#app',
   vuetify: new vuetify__WEBPACK_IMPORTED_MODULE_0___default.a()
-}).$mount('#app');
+});
 
 /***/ }),
 
